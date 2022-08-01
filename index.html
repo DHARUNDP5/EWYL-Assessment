@@ -7,11 +7,26 @@
         <title>today project</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
-       
-        
+    </div>
+            <div class="container">
+       <div>
+        <img src="./img/logo.png"class="img" alt="">
+       </div>
+       <div class="detail">
+        <a href="/home" onclick="gotoPage(event)">HOME</a> 
+        <a href="/about" onclick="gotoPage(event)">ABOUT</a> 
+        <a href="/contact" onclick="gotoPage(event)">CONTACT</a> 
+        <a href="/blog" onclick="gotoPage(event)">BLOG</a> 
+       </div>
+    
+        <input type="text" placeholder="text" class="box"></input>
+        <button onclick="searchcharname()" class="btn">Search</button>
+    </div>
+
+        <div id="display-container"></div>
         <script src="./index.js"></script>
     </body>
 </html>
