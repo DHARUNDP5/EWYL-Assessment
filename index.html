@@ -12,21 +12,29 @@
     <body>
     </div>
             <div class="container">
-       <div>
+        <table>
+            <tr> <td><div >
         <img src="./img/logo.png"class="img" alt="">
        </div>
-       <div class="detail">
-        <a href="/home" onclick="gotoPage(event)">HOME</a> 
-        <a href="/about" onclick="gotoPage(event)">ABOUT</a> 
-        <a href="/contact" onclick="gotoPage(event)">CONTACT</a> 
-        <a href="/blog" onclick="gotoPage(event)">BLOG</a> 
+    </td>
+    <td class="detail">
+       <div >
+        <!-- <a href="./about.html" target="_self" onclick="gotonextPage(event)">HOME</a>  -->
+        <a href="./about.html" target="_self">HOME</a>  
+        <a href="/about" onclick="gotonextPage(event)">ABOUT</a> 
+        <a href="/contact" onclick="gotonextPage(event)">CONTACT</a> 
+        <a href="/blog" onclick="gotonextPage(event)">BLOG</a> 
+        <div class="page-container"></div>
        </div>
-    
+    </td>
+    </tr>
+    </table>
         <input type="text" placeholder="text" class="box"></input>
         <button onclick="searchcharname()" class="btn">Search</button>
     </div>
-
+        <div class="back">
         <div id="display-container"></div>
+    </div>
         <script src="./index.js"></script>
     </body>
 </html>
