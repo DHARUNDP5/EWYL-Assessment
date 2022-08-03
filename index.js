@@ -9,21 +9,22 @@ fetch(url).then((data) => {
         let allInfo = JSON.parse(userInfo);
         allInfo.map(function (obj) {
             charInfo += `<div class="displaydetails">
-
+            <div class="image">
             <img  class="picture" src=${obj.picture.large} alt="img">
-
-
-            <h1 class="name">
+            </div>
+            <div>
+            <div class=names>
+            <h3 class="name">
             ${obj.name.title}
-            </h1>
-            <h2 class="name">
+            </h3>
+            <h3 class="name">
             ${obj.name.first}
-            </h2>
+            </h3>
             <h3 class="name">
             ${obj.name.last}
             </h3>
-
-
+            </div>
+            
             <p class="email">
              ${obj.email}
             </P>
@@ -33,6 +34,7 @@ fetch(url).then((data) => {
             <p class="loaction">
              ${obj.location.street.name}
             </p>
+            </div>
              </div>`
         })
         document.getElementById("display-container").innerHTML = charInfo;
@@ -45,31 +47,33 @@ const searchcharname= () => {
      let data = newdata.filter((item) => item.name.first=== val);
      data.map(function (obj) {
         charInfo += `<div class="displaydetails">
-
-        <img  class="picture" src=${obj.picture.large} alt="img">
-
-
-        <h1 class="name">
-        ${obj.name.title}
-        </h1>
-        <h2 class="name">
-        ${obj.name.first}
-        </h2>
-        <h3 class="name">
-        ${obj.name.last}
-        </h3>
-
-
-        <p class="email">
-         ${obj.email}
-        </P>
-         <p class="loaction">
-         ${obj.location.street.number}
-        </p>
-        <p class="loaction">
-         ${obj.location.street.name}
-        </p>
-         </div>`
+            <div class="image">
+            <img  class="picture" src=${obj.picture.large} alt="img">
+            </div>
+            <div>
+            <div class=names>
+            <h3 class="name">
+            ${obj.name.title}
+            </h3>
+            <h3 class="name">
+            ${obj.name.first}
+            </h3>
+            <h3 class="name">
+            ${obj.name.last}
+            </h3>
+            </div>
+            
+            <p class="email">
+             ${obj.email}
+            </P>
+             <p class="loaction">
+             ${obj.location.street.number}
+            </p>
+            <p class="loaction">
+             ${obj.location.street.name}
+            </p>
+            </div>
+             </div>`
     })
     console.log(charInfo);
     document.getElementById("display-container").innerHTML = charInfo;
@@ -105,38 +109,38 @@ function totalamount(){
     let val = document.querySelector('.box').value
     let data = newdata.filter((item) => item.name.first=== val);
     data.map(function (obj) {
-       charInfo += `<div class="displaydetails">
-
-       <img  class="picture" src=${obj.picture.large} alt="img">
-
-
-       <h1 class="name">
-       ${obj.name.title}
-       </h1>
-       <h2 class="name">
-       ${obj.name.first}
-       </h2>
-       <h3 class="name">
-       ${obj.name.last}
-       </h3>
-
-
-       <p class="email">
-        ${obj.email}
-       </P>
+        charInfo += `<div class="displaydetails">
+        <div class="image">
+        <img  class="picture" src=${obj.picture.large} alt="img">
+        </div>
+        <div>
+        <div class=names>
+        <h3 class="name">
+        ${obj.name.title}
+        </h3>
+        <h3 class="name">
+        ${obj.name.first}
+        </h3>
+        <h3 class="name">
+        ${obj.name.last}
+        </h3>
+        </div>
+        <p class="email">
+         ${obj.email}
+        </P>
+         <p class="loaction">
+         ${obj.location.street.number}
+        </p>
         <p class="loaction">
-        ${obj.location.street.number}
-       </p>
-       <p class="loaction">
-        ${obj.location.street.name}
-       </p>
-       <p class="loaction">
+         ${obj.location.street.name}
+        </p>
+        <p class="exp">
         Total : ${expvalue}
        </p>
-       <p class="loaction">
+       <p class="exp">
         Expense: ${amount}
        </p>
-
+        </div>
         </div>`
    })
    console.log(charInfo);
