@@ -4,7 +4,7 @@
 }
 .background {
 
-    background-color: gray;
+    background-color: rgb(243, 158, 158);
 }
 .logo{
     display: inline-block;
@@ -23,7 +23,7 @@
     text-decoration: none;
 }
 .detail{
-    background: burlywood;
+    background: rgb(155, 244, 60);
 }
 input.box {
     margin-left: 600px;
@@ -99,6 +99,10 @@ input.box {
             background-color: gold;
           
     }
+    .background {
+        width: 500px;
+        background-color: rgb(243, 158, 158);
+    }
     .names{
         display: flex;
         gap: 5px;
@@ -113,4 +117,74 @@ input.box {
     .loaction{
         margin-left: 20px;
     }
+    input.box {
+        margin-left: 30px;
+        height: 28px;
+        border-radius: 15px;
+        width: 250px;
+    }
+    .btn{
+        border-radius: 10px;
+        background-color: rgb(87, 86, 86);
+        margin-left: 5px;
+        height: 40px;
+        width: 70px;
+        margin-bottom: 20px;
+        background-color:rgb(204, 193, 193);
+        cursor: pointer;
+        
+    }
 }
+@media screen and (min-width:729px) and (max-width:937px){
+    #display-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .displaydetails{
+        background-color: rgb(66, 61, 61);
+        display: flex;
+        width: 720px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        border: 2px solid;
+        border-color: cornsilk;
+        border-radius: 10px;
+    } 
+    .displaydetails.hover {
+            background-color: gold;
+          
+    }
+    .names{
+        display: flex;
+        gap: 5px;
+        margin-left: 20px;
+    }
+    .content{
+        margin-left: 30px;
+    }
+    .email{
+        margin-left: 20px;
+    }
+    .loaction{
+        margin-left: 20px;
+    }
+    input.box {
+        margin-left: 30px;
+        height: 28px;
+        border-radius: 15px;
+        width: 250px;
+    }
+    .btn{
+        border-radius: 10px;
+        background-color: rgb(87, 86, 86);
+        margin-left: 5px;
+        height: 40px;
+        width: 70px;
+        margin-bottom: 20px;
+        background-color:rgb(204, 193, 193);
+        cursor: pointer;
+        
+    }
+}
+
