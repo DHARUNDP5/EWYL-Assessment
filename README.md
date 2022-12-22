@@ -1,2 +1,0 @@
-# EWYL-Assessment
-EWYL PROGRAM
